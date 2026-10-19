@@ -62,7 +62,7 @@
           <a class="nav-link" href="ecom.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Shop</a>
+          <a class="nav-link active" href="shop.html">Shop</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
@@ -94,7 +94,7 @@
         <!-- Left side: product images -->
         <div class="col-lg-5 col-md-6 col-12">
             <div style="background-color: #f5f5f5; padding: 20px; text-align: center;">
-            <img class="img-fluid pb-1" src="imggg/tsbs.png1.jpeg" alt="Blue T-shirt" width="100%" height="450px; object-fit: contain; display: block;">
+            <img class="img-fluid pb-1" src="imggg/tsbs.png1.jpeg" id="MainImg" alt="Blue T-shirt" width="100%" height="450px; object-fit: contain; display: block;">
 
             <div class="small-img-group">
                 <div class="small-img-col">
@@ -132,6 +132,66 @@
             </div>
     </div>
 
+</section>
+
+<section id="featured" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Related Products</h3>
+    <hr class="mx-auto">
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="imggg/sho1.png.jpeg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport bootstrap</h5>
+      <h4 class="p-price">Rs.14260</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="imggg/sho2.png copy.jpeg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport bootstrap</h5>
+      <h4 class="p-price">Rs.14260</h4>
+      <button class="buy-btn">Buy Now</button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="imggg/sho3.png.jpeg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport bootstrap</h5>
+      <h4 class="p-price">Rs.14260</h4>
+      <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="imggg/sho4.png.jpeg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport bootstrap</h5>
+      <h4 class="p-price">Rs.14260</h4>
+      <button class="buy-btn">Buy Now</button>
+      </div>
 </section>
 
 <footer class="mt-5 py-5">
@@ -202,6 +262,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+  var MainImg = document.getElementById('MainImg');
+  var smallimg = document.getElementsByClassName('small-img');
+
+  smallimg[0].onclick = function(){
+    MainImg.src = smallimg[0].src;
+  }
+  smallimg[1].onclick = function(){
+    MainImg.src = smallimg[1].src;
+  }
+  smallimg[2].onclick = function(){
+    MainImg.src = smallimg[2].src;
+  }
+  smallimg[3].onclick = function(){
+    MainImg.src = smallimg[3].src;
+  }
+
+
+
+
+</script>
     
 </body>
 </html>
