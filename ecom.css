@@ -449,3 +449,22 @@ footer .copyright a:hover {
     color: #fd8c66;
 }
 
+/* cart */
+
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table {
+    font-weight: 700;
+}
+
+#cart-container table thead td{
+    background: #fd8c66;
+    color:#fff;
+    border: none;
+    padding: 6px 0;
+}
+
